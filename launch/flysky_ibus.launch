@@ -1,0 +1,11 @@
+<launch>
+    <!-- execute GL310 for point-cloud publish -->
+    <node pkg="flysky_ibus" type="flysky_ibus_node" name="flysky_ibus_node" output="screen">
+        <param name="frame_id" type="string" value="laser"/>
+        <param name="usb_port" type="string" value="/dev/ttyUSB0"/>
+        <param name="pub_topicname_cmdvel" type="string" value="cmd_vel"/>
+        <param name="ang_reverse" type="bool" value="true"/>
+        
+    </node>
+</launch>
+
